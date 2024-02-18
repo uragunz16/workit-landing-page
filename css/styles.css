@@ -14,8 +14,9 @@ body {
     width: 100vh;
     height: 90vh;
 } */
-
-
+a {
+    text-decoration: none;
+}
 .hero {
     background-color: rgb(36 5 62);
     height: 90vh;
@@ -29,8 +30,17 @@ body {
 }
 .hero__nav--btn {
     color: #fff;
-    font-size: 1.7rem;
     border-bottom: 2px solid #43ffa1;
+    font-size: 1.7rem;
+    padding-bottom: 3px;
+}
+.hero__nav--btn:hover {
+    background-color: #43ffa1;
+    border-radius: .3rem;
+    color: #00362a;
+    font-size: 1.7rem;
+    padding: .2rem 2rem;
+    transition: all .3s;
 }
 .hero__content {
     position: relative;
@@ -51,28 +61,36 @@ body {
     font-size: 8rem;
     font-weight: 300;
     margin-top: 7rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
-.hero__content--header span {
+.hero__content--header a {
     border-bottom: 2px solid #43ffa1;
+    color: #fff;    
+}
+.hero__content--header a:hover {
+    background-color: #43ffa1;
+    border-radius: 3px;
+    border: none;
+    color: #00362a;
+    padding: 3px;
+    transition: all .4s;
 }
 .hero__content--btn {
     background-color: #43ffa1;    
     padding: 2rem 4rem;
 }
-.hero__content--btn a {
+.hero__content--link {
+    background-color: #43ffa1;
     color: #00362a;
     font-size: 1.7rem;
     font-weight: 600;
+    padding: 1rem 3rem;
     text-decoration: none;
 }
-.hero__content--btn a:focus {
-    display: none;
-}
-.hero__content--link a:link,
-.hero__content--link a:active,
-.hero__content--link a:visited {
-    background-color: #43ffa1;
+.hero__content--btn:hover {
+    border: 1px solid #43ffa1;
+    background-color: none;
+    color: #fff;
 }
 .hero__content--bgright {
     position: absolute;
