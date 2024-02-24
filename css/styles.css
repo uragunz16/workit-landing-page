@@ -44,15 +44,12 @@ section {
 .hero {
     background-color: rgb(36 5 62);
     height: 90vh;
-<<<<<<< HEAD
     position: relative;
 
     /* fonts */
     font-feature-settings: var(--fraunces-144pt-semibold-case), var(--fraunces-144pt-semibold-ss01);
 
-=======
     /* display: block; */
->>>>>>> fordesign
 }
 .hero__nav {
     display: flex;
@@ -88,7 +85,7 @@ section {
 /* background right */
 .hero__content--bgright {
     position: absolute;
-    top: 22.7%;
+    top: 24.2%;
     right: 2.6%;
     transform: translate(50%, 50%);
     width: 12%; /*fluid image*/
@@ -140,7 +137,7 @@ section {
     width: 50%;
     margin-top: 5rem;
     position: absolute;
-    top: 60rem;
+    top: 73rem;
     left: 50rem;
     transform: translate(0%, -50%);
 }
