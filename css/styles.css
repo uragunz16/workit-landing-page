@@ -37,6 +37,13 @@ h1 {
 a {
     text-decoration: none;
 }
+.btn {
+    background-color: #43ffa1;
+    color: #00362a;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+}
 section {
     width: 100%;
     margin: 0 auto;
@@ -190,3 +197,34 @@ section {
 }
 
 /* style for section  */
+/* start style for section author */
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.author__content {
+    background-color: aqua;
+    width: 25%;
+    height: 60%;
+}
+.author__image {
+    width: 25%;
+    height: 60%;
+    /* transform: translate(-68%, 8%); */
+}
+.author__message {
+    background-color: rgba(36 5 62);
+    width: 100%;
+    /* transform: translate(1%, 1%); */
+    z-index: 100;
+}
+.author__message h3 p {
+    color: #a996b9;
+}
+.author__content--link {
+    color: #00362a;
+    margin: 1rem;
+    padding: 1rem;
+}
