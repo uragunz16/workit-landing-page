@@ -1,3 +1,22 @@
+/* For Fonts */
+:root {
+    /* fonts for fraunces */
+    --fraunces-144pt-semibold-case: "case" on;
+    --fraunces-144pt-semibold-ss01: "ss01" on;
+    /* fonts for manrope */
+    --manrope-extralight-aalt: "aalt" on;
+    --manrope-extralight-case: "case" on;
+    --manrope-extralight-dnom: "dnom" on;
+    --manrope-extralight-frac: "frac" on;
+    --manrope-extralight-numr: "numr" on;
+    --manrope-extralight-ordn: "ordn" on;
+    --manrope-extralight-pnum: "pnum" on;
+    --manrope-extralight-sinf: "sinf" on;
+    --manrope-extralight-subs: "subs" on;
+    --manrope-extralight-sups: "sups" on;
+    --manrope-extralight-tnum: "tnum" on;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +24,16 @@
 }
 html {
     font-size: 62.5%;
+    font-family: --manrope-extralight-tnum;    
 }
 body {
     box-sizing: border-box;
 }
-/* .hero {
-    background-image: #00012d, clip-path: circle(50.5% at 48% 37%);
-    width: 100vh;
-    height: 90vh;
-} */
+/* Just an example */
+h1 {
+    --fraunces-144pt-semibold-ss01: "ss01" on;
+}
+/* It end's here */
 a {
     text-decoration: none;
 }
@@ -21,12 +41,15 @@ a {
     background-color: rgb(36 5 62);
     height: 90vh;
     position: relative;
+
+    /* fonts */
+    font-feature-settings: var(--fraunces-144pt-semibold-case), var(--fraunces-144pt-semibold-ss01);
+
 }
 .hero__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 0 15rem; */
     padding-top: 5rem;
 }
 .hero__nav--btn {
@@ -44,22 +67,30 @@ a {
     transition: all .3s;
 }
 .hero__content {
-    /* position: relative; */
     margin: 0 15rem;
 }
 /* background left */
 .hero__content--bgleft {
     position: absolute;
-    top: 32.7rem;
-    left: -11.7rem;
-    width: 16%;
+    top: 12.5%;
+    left: -14%;
+    transform: translate(50%, 25%);
+    width: 16%; /*fluid image*/
+}
+/* background right */
+.hero__content--bgright {
+    position: absolute;
+    top: 22.7%;
+    right: 2.6%;
+    transform: translate(50%, 50%);
+    width: 12%; /*fluid image*/
 }
 .hero__content--paragraph {
     display: flex;
     align-items: center;
     flex-direction: column;    
     color: #fff;
-    text-align: center;   
+    text-align: center;
 }
 .hero__content--header {
     color: #fffffd;
@@ -96,12 +127,6 @@ a {
     border: 1px solid #43ffa1;
     background-color: none;
     color: #fff;
-}
-.hero__content--bgright {
-    position: absolute;
-    top: 17.7rem;
-    right: -4.4rem;
-
 }
 .hero__content--btmcenter {
     width: 50%;
