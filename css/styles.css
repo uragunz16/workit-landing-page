@@ -48,8 +48,6 @@ section {
 
     /* fonts */
     font-feature-settings: var(--fraunces-144pt-semibold-case), var(--fraunces-144pt-semibold-ss01);
-
-    /* display: block; */
 }
 .hero__nav {
     display: flex;
@@ -72,7 +70,7 @@ section {
     transition: all .3s;
 }
 .hero__content {
-    margin: 0 15rem;
+    margin: 0 15rem; /*it remove the margin */
 }
 /* background left */
 .hero__content--bgleft {
@@ -162,6 +160,8 @@ section {
     align-items: center;
     font-weight: lighter;
     text-align: center;
+}
+.info__content:not(:last-child) {
     margin: 0 5rem;
 }
 .info__content--number {
@@ -188,3 +188,5 @@ section {
     letter-spacing: -1px;
     line-height: 2.5rem;
 }
+
+/* style for section  */
